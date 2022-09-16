@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in;
+    font-family: 'rubik', sans-serif;
+}
+
+.login{
+    color: white;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+.login:hover{
+    transition: 0.6s ease-in-out;
+    color: #00ed82;
+    
+}
+
+body{
+    background-color: black;
+}
+
+h4{
+    color: #00ed82;
+    font-size: 15px;
+}
+
+/* header */
+
+.hulu-logo{
+    max-width:300px;
+}
+
+.header-text-1{
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+}
+
+.header-text-2{
+    font-size:18px;
+    color: white;
+    font-weight: 300;
+}
+
+.btn-free-trial{
+    background-color: whitesmoke;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight:400;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn-free-trial:hover{
+    opacity: 0.5;
+}
+
+.legal-text{
+    font-size: 10px;
+    color: white;
+}
+
+.header{
+    text-align: center;
+    line-height: 60px;
+    padding-bottom: 40px;
+    background-image: url(/images/hulu/header.jpg);
+    background-size: contain;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+
+/* .below-header */
+
+.below-header-text-3{
+    line-height: 1.5;
+    padding-left: 25px;
+}
+.below-header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    background: linear-gradient(
+        318.68deg,
+        #0f495c 0%,
+        #0d3640 49.72%,
+        #08141f 100%
+    );
+    
+}
+.below-header-paragraph{
+    color: white;
+    font-size:25px ;
+    font-weight: 100;
+}
+
+.details{
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.below-header-text-1{
+    display: flex
+}
+
+.logos{
+    max-width: 350px;
+    max-height: 90px;
+}
+
+.below-header-text-2{
+    display: grid;
+    gap: 6px;
+}
+
+.btn-get-bundle{
+    background: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    padding: 20px 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.terms-apply{
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* third-container */
+
+.tv-show-container{
+    background-color: black;
+}
+
+.third-container-header-text-1, .third-container-header-text-2{
+    color: white;
+    text-align: center;
+}
+
+.third-container-header-text-1{
+    font-size: 70px;
+    font-weight: 600;;
+}
+
+.third-container-header-text-2{
+    font-size: 24px;
+    
+}
+
+.tv-show-container h4{
+    text-align: center;
+}
+
+.tv-show-container-text{
+    line-height: 2;
+    padding-bottom: 30px;
+    padding-top: 80px;
+}
+.tv-show{
+    color: white;
+}
+
+.tv-shows h2{
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 2 ;
+    
+}
+
+.tv-shows{
+    height: 500px;
+    width: 300px;
+}
+
+.tv-show{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    place-items: center;
+    max-width: clamp(1212px, 100%, 1329px) ;
+    margin: auto;
+}
+
+.past-and-current{
+ position: relative;
+ overflow: hidden;
+}
+
+.past-and-current::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hulu/TV\ Shows.jpg);
+    z-index: 1;
+    opacity: 0.3;
+
+}
+.movies {
+    position: relative;
+
+}
+
+.movies::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hulu/movies.webp);
+    background-position: bottom left;
+    z-index: 1;
+    opacity: 0.3;
+
+}
+
+.hulu-originals{
+    position: relative;
+
+}
+
+.hulu-originals::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hulu/hulu\ or.jpg);
+    background-position: center;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.premiums{
+    position: relative;
+
+}
+
+.premiums::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hulu/wonder-woman-1984-wings-4k-89.jpg);
+    background-position: bottom right;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/* live-container */
+.live{
+    background-color: rgb(24, 23, 23);
+    text-align: center;
+    line-height: 60px;
+    border: 4px   #1ce783 solid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-radius: 16px;
+    padding-bottom: 5rem;
+}
+
+.live-container{
+    background-color:  rgb(24, 23, 23);
+    margin-top: 6rem;
+    border: 3px  rgb(24, 23, 23) solid;
+
+}
+
+.live a{
+    color: white;
+    font-size: 18px;
+}
+
+.live h4{
+    margin-top: 4rem;
+}
+
+
+/* fourth container */
+.live-sports-container{
+   background-image: url(/images/hulu/live-sports.jpg) ;
+   background-repeat: no-repeat;
+   background-size:cover;
+   line-height: 2;
+   padding-bottom: 12rem;
+   padding-top: 10rem;
+   padding-left: 6rem;
+}
+
+.live-sports-header{
+    font-size: 70px;
+    font-weight:600;
+    color: white;
+}
+
+.live-sports-sub-text{
+    font-size: 24px;
+    color: white;
+}
+
+
+
+.sport-logos{
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.sport-logos div{
+    background-color: white;
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    position: relative;
+   
+}
+
+.sports-logo{
+    max-width: 40px;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+
+.live-sports-logo-2, .live-sports-logo-3, .live-sports-logo-4{
+    margin-left: 2rem;
+}
+
+/* fifth-container */
+.footer-container{
+    background-color: white;
+    max-width: clamp(951px, 100%, 1060px);
+    margin: auto;
+
+ 
+}
+
+.fifth-container{
+    background-color: white;
+    padding: 20px;
+}
+
+footer{
+     display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* place-items: center;  */
+    
+    
+  
+    
+}
+
+.footer-link{
+    line-height: 2;
+    color: black;
+    text-decoration: none;
+}
+
+.block p{
+   font-weight: 600;
+}
+
+i{
+    color: grey;
+}
+
+
+
+.fa{
+    font-size: 30px !important;
+    margin-left: 20px;
+    margin-top: 2rem;
+}
+
+hr{
+    border: none;
+    border-bottom:1px solid grey;
+    width: 100%;
+}
+
+/* media-query */
+
+@media screen and (max-width: 1229px){
+    .tv-show{
+        grid-template-columns:  1fr 1fr;
+        width: 50%;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 985px){
+    .tv-show{
+        grid-template-columns: 1fr;
+        margin-right: 18em;
+
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+    }
+
+    .logos{
+        height: 3rem;
+    }
+    
+.tv-shows{
+    height: 300px;
+    width: 600px;
+    margin: auto;
+}
+
+.live-sports-header{
+    font-size: 50px;
+}
+
+.live-sports-container{
+    padding-left: 2rem;
+}
+}
+ 
+@media screen and (max-width: 735px) {
+    .below-header{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .below-header-text-1{
+        display: grid;
+        grid-template-columns: 1fr ;
+        place-items: center;
+    }
+    .btn-get-bundle{
+        width:  40%;
+        margin: auto;
+    }
+
+    .terms-apply{
+        text-align: center;
+    }
+} 
+
+@media screen and (max-width: 633px ){
+    .tv-show{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .third-container-header-text-1{
+        font-size: 35px;
+    }
+    .third-container-header-text-2{
+        font-size: 20px;
+    }
+       
+    footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    /* .block-1{
+        right: 20px;
+        position: relative;
+    }
+    .block-5{
+        position: relative;
+        right: 40px;
+    }
+
+    .block-4{
+        position: relative;
+        right: -29px;
+    } */
+
+
+.tv-shows{
+    height: 500px;
+    width: 300px;
+}
+}
+
+@media screen and (max-width: 534px ){
+    .tv-shows{
+        width: 14rem;
+        
+    }
+
+    footer{
+        grid-template-columns: 1fr ;
+    }
+
+
+    
+
+}
